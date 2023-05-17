@@ -15,10 +15,10 @@ getWeatherDetails = (addr) => {
             if(data.error){
                 console.log(data.error)
             } else {
-                
                 const center = data.features[0].center
-            
-                document.querySelector('p').innerHTML = center;
+                console.log(data.features[0])
+                const message = "Latitude = "+center[0]+" and Longitude = "+center[1]+" in "+data.features[0].place_name
+                document.querySelector('p').innerHTML = message;
                 // fetch("http://api.weatherstack.com/current?access_key=3c97f386d7b8b4e163458e044d950468&query="+center[0]+","+center[1]+"&units=f")
                 // .then((r) => {
                 //     r.json()
