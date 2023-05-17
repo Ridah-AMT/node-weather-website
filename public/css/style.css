@@ -1,0 +1,26 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+div {
+    margin: 50px 10px;
+}
+a {
+    color:gray;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 30px;
+}
+h1 {
+    color:brown;
+}
+h2 {
+    color: red
+}
+h3 {
+    color: blue;
+}
+h4 {
+    color:aquamarine;
+}
